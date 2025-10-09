@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/234248863870998404/573ef028415d4fd1b3e1e99f35e0ff6b/artifacts
+end_time: 1759571454900
+entry_point_name: ''
+experiment_id: '234248863870998404'
+lifecycle_stage: active
+run_id: 573ef028415d4fd1b3e1e99f35e0ff6b
+run_name: resilient-squid-360
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759571454846
+status: 3
+tags: []
+user_id: Hari
