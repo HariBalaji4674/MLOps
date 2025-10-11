@@ -19,5 +19,10 @@ jobs:
                echo "REF: $GITHUB_REF"
                echo "ACTOR: $GITHUB_ACTOR"
                echo "ACTION: $GITHUB_ACTION"
+               echo "JOB ID: $GITHUB_JOB"
+        - name: Third Run Action For Verification
+          run: |
+            echo "This is Third Action Running $GITHUB_ACTOR"
+            echo "JOB ID: $GITHUB_JOB"
 
             
