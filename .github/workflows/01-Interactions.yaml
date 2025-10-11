@@ -1,7 +1,7 @@
 name: Permissions Issue Workflow
 on: ["pull_request_target","issues"]
 jobs:
-  greetings:
+  openissuejob:
     runs-on: ubuntu-latest
     permissions:
       issues: write
