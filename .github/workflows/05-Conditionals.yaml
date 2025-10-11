@@ -7,3 +7,13 @@ jobs:
         steps:
             - name: This is Conditionls Action
               run: echo "This is Conditional Action"
+            - name: Running If-Else in Shell
+              run: |
+                if [[ ${{ github.event }} == 'push' ]]; then
+                  echo "This is Push Even Condition"
+                elif [[ ${{ github.event }} == 'pull_request' ]]; then
+                  echo "This is Pull Request Method "
+                else
+                  echo "None is Selected "
+                fi
+                
