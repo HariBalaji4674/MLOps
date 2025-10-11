@@ -31,4 +31,7 @@ jobs:
             - name: Value Enter Condition Job Runs
               if: ${{ fromJSON(github.event.inputs.a) }} + ${{ fromJson(github.event.inputs.b)}} == 10
               run: echo "Addition SUccessfull"
+            - name: Value Enter Condition Job Runs
+              if: ${{ fromJSON(github.event.inputs.a) }} + ${{ fromJson(github.event.inputs.b)}} != 10
+              run: echo "Sorry The Workflow is not SUccessfull"
                 
