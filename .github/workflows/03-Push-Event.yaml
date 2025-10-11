@@ -1,0 +1,12 @@
+name: push event workflow triggers
+on:
+    push:
+        branches: 
+            - main
+jobs:
+    pushEventJob:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: This is Push Event Job Running
+              run: echo "Hello My Dear Hari The time is $(date)"
