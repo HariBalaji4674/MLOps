@@ -10,7 +10,3 @@ jobs:
         steps:
         - name: This is My First Schdule Runs every 5 minutes
           run: echo "Peddireddy Hari Vardhan Reddy"
-        # - name: This is My Second Step For Every 10 minutes
-        #   if: github.event.schedule == '*/5 * * * *'
-        #   run: echo "This is Second Step will Step Next time"
-             
