@@ -39,7 +39,7 @@ jobs:
         steps:
             - name: If else statement Running
               run: |
-                sum = ${{ github.event.inputs.a }} + ${{ github.event.inputs.b }}
+                sum = $((${{ github.event.inputs.a }} + ${{ github.event.inputs.b}}))
                 if [ $sum -eq 10 ]; then
                   echo "Value is equal To sum "
                 else
