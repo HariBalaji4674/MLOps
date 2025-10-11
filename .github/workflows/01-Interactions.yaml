@@ -1,5 +1,5 @@
 name: Permissions Issue Workflow
-on: [pull_request_trigger,issues]
+on: ["pull_request_target","issues"]
 jobs:
   greetings:
     runs-on: ubuntu-latest
