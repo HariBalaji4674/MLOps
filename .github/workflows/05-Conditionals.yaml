@@ -1,0 +1,9 @@
+name: Conditionals Workflow Running On All actions
+on:
+    workflow_dispatch:
+jobs:
+    ConditionalJob:
+        runs-on: ubuntu-latest
+        steps:
+            - name: This is Conditionls Action
+              run: echo "This is Conditional Action"
