@@ -24,5 +24,7 @@ jobs:
           run: |
             echo "This is Third Action Running $GITHUB_ACTOR"
             echo "JOB ID: $GITHUB_JOB"
+        - name: Activity Centre down
+          run: echo "$(date)"
 
             
