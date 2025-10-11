@@ -1,0 +1,24 @@
+name: This is Multiple Events Git Hub Action workflow
+on:
+    push: 
+        branches: 
+            - main
+            - dev
+    pull_request: 
+        branches: 
+            - main
+jobs:
+    multiEventJob:
+        runs-on: ubuntu-latest
+        # - uses: actions/checkout@v2
+        steps:
+        - name: "Running Multi Event Job"
+          run: echo " PeddiReddy The Time is $(date)"
+        - name: "Running Second Time For Details"
+          run: |
+               echo "REF: $GITHUB_REF"
+               echo "ACTOR: $GITHUB_ACTOR"
+               echo "ACTION: $GITHUB_ACTION"
+               echo "JOB ID: $GITHUB_JOB"
+
+            
