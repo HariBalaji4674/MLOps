@@ -1,0 +1,14 @@
+name: Permissions Issue Workflow
+on: [pull_request_trigger,issues]
+jobs:
+  greetings:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: "Message list down here"
+        pr-message: "This is Correct PR "
